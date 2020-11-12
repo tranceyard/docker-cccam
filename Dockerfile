@@ -11,4 +11,4 @@ EXPOSE 12000
 EXPOSE 16000
 EXPOSE 16001
 
-ENTRYPOINT ["sudo" "/bin/./CCcam", "-d", "-C", "/etc/CCcam/CCcam.cfg"]
+ENTRYPOINT ["/bin/./CCcam", "-d", "-C", "/etc/CCcam/CCcam.cfg"]
