@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:20.04
 MAINTAINER ryanfox1985 <wolf.fox1985@gmail.com>
 
 COPY CCcam.x86_64 /bin/CCcam
@@ -11,4 +11,4 @@ EXPOSE 12000
 EXPOSE 16000
 EXPOSE 16001
 
-ENTRYPOINT ["/bin/./CCcam", "-d", "-C", "/etc/CCcam/CCcam.cfg"]
+ENTRYPOINT ["sudo" "/bin/./CCcam", "-d", "-C", "/etc/CCcam/CCcam.cfg"]
